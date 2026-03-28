@@ -70,6 +70,10 @@ SIEM-Lab/
 This repository contains high-level information only.
 Configuration details and queries are intentionally omitted.
 
+## Screenshots
+
+![Dashboard](screenshots/dashboard.png)
+
 ---
 
 ## Author
