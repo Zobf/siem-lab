@@ -72,7 +72,7 @@ Configuration details and queries are intentionally omitted.
 
 ## Screenshots
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard2.png)
 
 ---
 
