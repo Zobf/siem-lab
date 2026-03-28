@@ -1,36 +1,60 @@
-# siem-lab
 # SIEM Lab using Splunk
 
 ## Overview
 
-This project demonstrates a basic SIEM lab built using Splunk to simulate real-world security monitoring.
+Built a SIEM lab using Splunk to simulate SOC monitoring.
 
-The lab focuses on collecting logs from a Windows endpoint, forwarding them to a Splunk server (Ubuntu), and analyzing security events.
+Logs were collected from a Windows endpoint and forwarded to a Splunk indexer on Ubuntu.
+
+The focus was on:
+
+* Log ingestion
+* Detection
+* Dashboard monitoring
 
 ---
 
 ## Architecture
 
 * Windows Endpoint (Log Source)
-* Splunk Universal Forwarder (Data Forwarding)
-* Splunk Enterprise on Ubuntu (Indexer & Search)
+* Splunk Universal Forwarder
+* Splunk Indexer (Ubuntu)
+* Splunk Web (Search & Dashboard)
 
 ---
 
-## Key Capabilities
+## Data Collection
 
-* Log collection from Windows systems
-* Data ingestion into Splunk
-* Basic detection use cases (e.g., failed logins)
-* Security monitoring through dashboards
+The lab focuses on collecting meaningful security data, including:
+
+* Authentication events (login success/failure)
+* User account activity
+* Process execution
 
 ---
 
 ## Example Use Cases
 
-* Monitoring failed login attempts
-* Tracking user activity
-* Observing process execution
+* Failed login detection (brute force behavior)
+* Monitoring user activity
+* Observing suspicious process execution
+
+---
+
+## Dashboard
+
+A basic SOC dashboard was created to visualize:
+
+* Failed login attempts
+* Successful logins
+* User activity
+* Timeline of events
+
+---
+
+## Screenshots
+
+![Dashboard](screenshots/dashboard2.png)
 
 ---
 
@@ -38,8 +62,8 @@ The lab focuses on collecting logs from a Windows endpoint, forwarding them to a
 
 * Handling dynamic IP issues and ensuring stable connectivity
 * Rebuilding the environment due to initial setup instability
-* Understanding data ingestion flow in Splunk
-* Resolving log visibility issues caused by index binding
+* Troubleshooting missing logs (ingestion issues)
+* Resolving index binding problems
 
 ---
 
@@ -48,20 +72,18 @@ The lab focuses on collecting logs from a Windows endpoint, forwarding them to a
 * Difference between log collection, ingestion, and indexing
 * Importance of stable infrastructure in SIEM environments
 * How detection is built on top of raw logs
-* Real-world SOC workflow concepts
+* Understanding basic SOC workflows
 
 ---
 
 ## Project Structure
 
-```
 SIEM-Lab/
 │
 ├── README.md
 ├── architecture.png
 ├── screenshots/
 │   └── dashboard.png
-```
 
 ---
 
@@ -69,10 +91,6 @@ SIEM-Lab/
 
 This repository contains high-level information only.
 Configuration details and queries are intentionally omitted.
-
-## Screenshots
-
-![Dashboard](screenshots/dashboard2.png)
 
 ---
 
